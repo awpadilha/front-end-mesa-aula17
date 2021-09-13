@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.bola img {
+  animation: bola 5s infinite;
+  position: center;
+  height: 400px;
+  width: 400px;
+}
+
+@keyframes bola {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(400%);
+    opacity: 100%;
+  }
+}
+
+.icone img {
+  animation: icone 5s infinite;
+  position: center;
+  width: 250px;
+  position: absolute;
+  top: 400px;
+  left: calc(42%);
+}
+
+@keyframes icone {
+  from {
+    transform: rotate(0) translateX(-100%) translateY(-100%);
+  }
+  to {
+    transform: rotate(360deg) translateX(0) translateY(0);
+  }
+}
+
+button {
+  position: center;
+  width: 300px;
+  position: absolute;
+  top: 800px;
+  left: calc(41%);
+  color: rgb(39, 26, 26);
+  padding: 20px 50px;
+  transition: all 3s ease-in-out;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50% 0% 50% 0%;
+}
+
+button:hover  {
+  background: #70102E;
+  color: aliceblue;
+  font-size: 20px;
+}
